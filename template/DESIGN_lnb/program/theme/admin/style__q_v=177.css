@@ -1,0 +1,76 @@
+.ABA-lnb-box a{letter-spacing:-0.5px;}
+
+/* 1뎁스 */
+.ABA-head-lnb h3 { display:none; }
+
+/* 2뎁스 */
+.ABA-lnb > li{position:relative; border-bottom:1px solid #e1e1e1;}
+.ABA-lnb > li > a, .ABA-lnb > li > span, .ABA-lnb > li > div > a{background:linear-gradient(to bottom, #ffffff 0%, #f7f7f7 10%); background:-webkit-linear-gradient(top, #ffffff 0%, #f7f7f7 10%); background-color:#f7f7f7;}
+.ABA-lnb > li:first-child > a{background:none;}
+.ABA-lnb > li:last-child{border-bottom:none; box-shadow:none;}
+.ABA-lnb li a, .ABA-lnb li > span{display:block; position:relative; padding:13px 0 14px 2px; color:#414141; font-weight:bold; font-size:13px;}
+/*.ABA-lnb li.AB-current-lnb a, .ABA-lnb li.AB-current-lnb ul.ABA-lnb-sub li.AB-current-lnb a, .ABA-lnb ul.ABA-lnb-sub li.AB-current-lnb a, .admin-designer-wrap .ABA-lnb li a:hover{color:#4174bd;}*/
+.ABA-lnb li.AB-child a{padding:13px 0 11px 2px;}
+
+/* 3뎁스 */
+.ABA-lnb .ABA-lnb-sub{padding:0 0 13px 10px;}
+.ABA-lnb .ABA-lnb-sub li a{padding:3px 0 3px 0; font-weight:normal; font-size:12px; color:#6d6d6d;}
+.ABA-lnb .ABA-lnb-sub li a:hover{ color:#2d85e4;  }
+.ABA-lnb li.AB-current-lnb > a{ color:#2d85e4; font-weight:bold;}
+
+/*새글 또는 페이지 신규등록시 아이콘 표시*/
+.ABA-lnb .AB-recent-update{background:url("admin_lnb_new.png") left 4px no-repeat; padding-left:17px; margin-left:5px;}
+.ABA-lnb-sub .AB-recent-update{background-position-y:3px;}
+.ABA-head-lnb .AB-recent-update{background-position-y:6px;}
+
+/* 휴지통 아이콘 */
+.ABA-lnb li[id*="AB-lnb-admin"] > a[href*="trash_can"] { background:url("/template/DESIGN_content/program/theme/01/board_list_btn_d.png") 98% center no-repeat; }
+
+/* 관리자페이지 lnb left*/
+[id^="admin-toggle-lnb"] { cursor:pointer; z-index:9999; width:16px; height:50px; margin:2px 0 0 2px; }
+#admin-toggle-lnb.-show { background:url("/cooker/theme/20170301/images/admin_layout_btn_new_hide.png") left top no-repeat; }
+#admin-toggle-lnb.-hide { background:url("/cooker/theme/20170301/images/admin_layout_btn_new_show.png") left top no-repeat; }
+#admin-toggle-lnb.-show:hover { background-image:url("/cooker/theme/20170301/images/admin_layout_btn_new_hide_over.png"); }
+#admin-toggle-lnb.-hide:hover { background-image:url("/cooker/theme/20170301/images/admin_layout_btn_new_show_over.png"); }
+[id^="intranet_lnb"] { z-index:1; background: #f7f7f7; border:1px solid #ddd; border-width:1px 1px 0 0; box-shadow:#fff -2px 2px 2px inset; margin-top:2px; margin-bottom:0; position:relative; }
+[id^="intranet_lnb"] .ABA-content-box { margin:0 12px; }
+[id^="intranet_lnb"] .ABA-content-box:first-child { margin-top:2px; }
+#intranet_lnb .ABA-lnb li { position:relative; }
+#intranet_lnb .ABA-lnb li.admin-designer-edit-mode { position:static; }
+.intranet_lnb-hide { display:none }
+#intranet_lnb .AB-exists-source { color:#397dde; }
+#intranet_lnb .-btnAdminWindow { font-size:11px; color:#575a63; letter-spacing:-1px; line-height:15px; font-weight:normal; font-family:dotum, malgun gothic,"Apple SD Gothic Neo"; text-decoration:none; 
+background:url("/cooker/theme/20170301/images/admin_move_page_btn_bg.png") right top no-repeat; display:inline-block; padding:0 16px 0 0; margin-left:5px; vertical-align:top; box-sizing:border-box; min-width:36px; position:absolute; top:16px; right:0; }
+#intranet_lnb .-btnAdminWindow.-btnTypeSetup { background-image:url("/cooker/theme/20170301/images/admin_setup_btn_bg.png"); }
+#intranet_lnb .-btnAdminWindow.-btnTypeMove { background-image:url("/cooker/theme/20170301/images/admin_move_page2_btn_bg.png"); }
+#intranet_lnb #-sl-move-page .-btnAdminWindow { top:17px; }
+#intranet_lnb #label_view_real_1 + .-btnAdminWindow { position:absolute; top:6px; right:0; }
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+	#intranet_lnb .-btnAdminWindow { line-height:13px; }
+	#intranet_lnb #-sl-move-page .-btnAdminWindow { top:16px; } 
+}
+
+/* 관리자페이지 lnb right(편집화면 내부페이지, 외부컨텐츠)*/
+#admin-toggle-lnb-right {margin:2px 2px 0 0;}
+#admin-toggle-lnb-right.-show { background:url("/cooker/theme/20170301/images/admin_layout_btn_right_new_hide.png") left top no-repeat; }
+#admin-toggle-lnb-right.-hide { background:url("/cooker/theme/20170301/images/bos_edit_renewal_arrow_icon.png") left top no-repeat; padding-right: 13px; }
+#admin-toggle-lnb-right.-show:hover { background-image:url("/cooker/theme/20170301/images/admin_layout_btn_right_new_hide_over.png"); }
+#admin-toggle-lnb-right.-hide:hover { background-image:url("/cooker/theme/20170301/images/bos_edit_renewal_arrow_hover_icon.png"); }
+#intranet_lnb_right {border-width:1px 0 0 1px; box-shadow:#fff 2px 2px 2px inset; }
+#intranet_lnb_right .bdList .articleHead h4 {font-size:13px; padding: 13px 0 14px 2px;}
+#intranet_lnb_right .bdList .-bdSchWrap {margin-bottom:15px; background:none;}
+#intranet_lnb_right .bdList .-bdSchWrap > div {padding:0;}
+#intranet_lnb_right div[-sw="contents-tab-in"] [id*="contents-tpl-list"] ul li {position:relative; padding:4px 40px 4px 0; color:#6d6d6d; line-height:18px; display:block; overflow:hidden; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:1;}
+#intranet_lnb_right div[-sw="contents-tab-in"] [id*="contents-tpl-list"] ul li .btnTemplateCopy {position:absolute; top:2px; right:0; padding:0; }
+#intranet_lnb_right div[-sw="contents-tab-in"] .-bdSchWrap {border:1px solid #ddd; border-radius:3px; position:relative; padding-right:45px; }
+#intranet_lnb_right div[-sw="contents-tab-in"] .-bdSchWrap input[type="text"] {border:none; border-radius:3px 0 0 3px; margin:0;}
+#intranet_lnb_right div[-sw="contents-tab-in"] .-bdSchWrap input[type="submit"] {position:absolute; top:0; right:0; margin:0; border-radius:0 3px 3px 0;}
+#intranet_lnb_right div[-sw="contents-tab-out"] .AB-text , #intranet_lnb_right div[-sw="contents-tab-out"] .AB-select {margin-bottom:7px; }
+#intranet_lnb_right div[-sw="contents-tab-out"] .-bdSchWrap input[type="submit"] {margin-top:10px; }
+#intranet_lnb_right .articleHead .btnContentsClientSetup {display:inline-block; width:17px; height:17px; position:absolute; top:12px; right:2px; }
+.admin-toggle-lnb-right-show .admin-designer-wrap {padding-right:260px; }
+#intranet_lnb_right {position:absolute; top:0; right:0; }
+#admin-toggle-lnb-right {position:absolute; top:0; right:240px; }
+.admin-toggle-lnb-right-hide .admin-designer-wrap {padding-right:20px; }
+.admin-toggle-lnb-right-hide #admin-toggle-lnb-right {right:0px; }
+#admin-toggle-lnb-right.abline-div-padding {right:240px !important;}
